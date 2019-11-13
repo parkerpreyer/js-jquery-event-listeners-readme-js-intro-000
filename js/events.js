@@ -17,6 +17,14 @@ function submitIt() {
   });
 }
 
+function pressIt() {
+  $('input').keydown(function(event) {
+    if(event.code == 'G') {
+      alert('You pressed the G!');
+    }
+  });
+}
+
 $(document).ready(function(){
   getIt();
   frameIt();
