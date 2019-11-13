@@ -19,7 +19,7 @@ function submitIt() {
 
 function pressIt() {
   $('#typing').keydown(function(event) {
-    if(event.code == 70) {
+    if(event.which === 71) {
       alert('You pressed the G!');
     }
   });
